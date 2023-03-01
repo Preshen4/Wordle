@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         btnSubmitName.setOnClickListener{
             val intent = Intent(this, Game::class.java)
-            intent.putExtra("Username",txtName.text)
+            intent.putExtra("Username",txtName.text.toString())
             startActivity(intent)
         }
     }

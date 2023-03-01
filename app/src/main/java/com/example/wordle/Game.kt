@@ -68,7 +68,9 @@ class Game : AppCompatActivity() {
     }
 
     fun getRandomWord():String{
-        val words = arrayOf("apple", "banana", "carat", "dance", "eager", "flair", "grape", "hazel", "igloo", "jolly", "kitty", "lemon", "mango", "noble", "olive", "piano", "queen", "rumba", "silly", "tiger", "unzip", "vital", "wedge", "xenon", "yacht", "zebra")
+        val words = arrayOf("apple", "banana", "carat", "dance", "eager", "flair", "grape", "hazel",
+            "igloo", "jolly", "kitty", "lemon", "mango", "noble", "olive", "piano", "queen", "rumba",
+            "silly", "tiger", "unzip", "vital", "wedge", "xenon", "yacht", "zebra")
         val randomIndex = Random().nextInt(words.size)
         return words[randomIndex]
     }
